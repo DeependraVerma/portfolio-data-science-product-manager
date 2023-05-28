@@ -63,7 +63,7 @@
                             </div>
                             <div class="hero-btn">
                                 <a class="btn" href="#contact">Hire Me</a>
-                                <a class="btn" onclick="sendEmail()">Contact Me</a>
+                                <button class="btn" id="contact-button">Contact Me</button>
                             </div>
                         </div>
                     </div>
@@ -367,16 +367,14 @@
             <div class="loader"></div>
         </div>
 <!-- Conatct Email -->
- <script>
-  function sendEmail() {
-    var recipientEmail = "deependra.verma00@gmail.com";
-    var subject = "Hello Deependra";
-    var emailBody = "Type your email body here";
-    
-    var mailtoLink = "mailto:" + recipientEmail + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(emailBody);
-    window.location.href = mailtoLink;
-  }
-</script>       
+<script>
+    document.getElementById("contact-button").addEventListener("click", function() {
+        var emailSubject = encodeURIComponent("Hello Deependra");
+        var mailtoLink = "mailto:deependra.verma00@gmail.com?subject=" + emailSubject;
+        window.location.href = mailtoLink;
+    });
+</script>
+
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
