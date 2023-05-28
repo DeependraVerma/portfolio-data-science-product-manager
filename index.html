@@ -62,7 +62,7 @@
                             </div>
                             <div class="hero-btn">
                                 <a class="btn" href="#contact">Hire Me</a>
-                                 <a class="btn" href="mailto:deependra.verma00@gmail.com?subject=Hello%20Deependra">Contact Me</a>
+                                <a class="btn" onclick="sendEmail()">Contact Me</a>
                             </div>
                         </div>
                     </div>
@@ -76,7 +76,16 @@
         </div>
         <!-- Hero End -->
 
-
+<script>
+  function sendEmail() {
+    var recipientEmail = "deependra.verma00@gmail.com";
+    var subject = "Hello Deependra";
+    var emailBody = "Type your email body here";
+    
+    var mailtoLink = "mailto:" + recipientEmail + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(emailBody);
+    window.location.href = mailtoLink;
+  }
+</script>
         <!-- About Start -->
         <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
             <div class="container-fluid">
