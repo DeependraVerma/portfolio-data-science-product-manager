@@ -38,6 +38,8 @@ a:focus {
     max-width: 1366px;
 }
 
+
+
 .btn {
     padding: 12px 25px;
     font-size: 14px;
@@ -147,7 +149,7 @@ a:focus {
 }
 
 .navbar .navbar-brand {
-    margin: 0;
+    margin: 10px;
     font-size: 45px;
     line-height: 0px;
     font-weight: 700;
@@ -236,6 +238,12 @@ a:focus {
     .navbar .dropdown-menu {
         box-shadow: none;
     }
+}
+
+@media (max-width: 767px) {
+  .navbar .navbar-brand {
+    font-size: 30px;
+  }
 }
 
 
@@ -408,6 +416,18 @@ a:focus {
     .hero .hero-btn .btn {
         padding: 8px 10px;
         letter-spacing: 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero .hero-image {
+        text-align: center;
+        padding-right: 0;
+    }
+    
+    .hero .hero-image img {
+        max-width: 100%;
+        max-height: 100%;
     }
 }
 
@@ -1589,5 +1609,20 @@ a:focus {
         font-size: 16px;
         line-height: 16px;
         padding: 0 5px;
+    }
+}
+@media (max-width: 991.98px) {
+    .footer .footer-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .footer-menu p {
+        border-right: none;
+        padding: 5px 0;
+    }
+
+    .footer .footer-social {
+        margin-top: 20px;
     }
 }
