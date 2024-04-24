@@ -504,19 +504,6 @@ a:focus {
     animation: your-background-animation-name-here 20s infinite alternate; /* Adjust animation duration and type */
 }
 
-/* Keyframes for background animation */
-@keyframes your-background-animation-name-here {
-    0% {
-        background-color: #000000; /* Initial background color */
-    }
-    50% {
-        background-color: #ffffff; /* Color change at 50% of animation */
-    }
-    100% {
-        background-color: #000000; /* Final background color */
-    }
-}
-
 /* Keep existing styles for about section content */
 .about .col-lg-6 {
     padding: 0;
@@ -586,6 +573,11 @@ a:focus {
     .about .about-content {
         padding: 45px 15px 0 15px;
     }
+}
+
+/* Remove or adjust the keyframes for background animation */
+@keyframes your-background-animation-name-here {
+    /* Remove or adjust keyframes here as needed */
 }
 
 
